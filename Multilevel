@@ -1,0 +1,21 @@
+public class A {
+
+	int ivalue=10;
+	public void display() {
+		System.out.println("A class method");
+	}
+}
+
+public class B extends A{
+
+	double dvalue=2.5;
+	void print() {
+		System.out.println("B class method");
+	}
+	
+	public static void main(String[] args) {
+		B ref = new B();
+		ref.display();
+		System.out.println(ref.ivalue);
+	}
+}
