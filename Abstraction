@@ -1,0 +1,38 @@
+
+public abstract class vehicle {
+abstract void engine (int flag);
+abstract void model (int type);
+abstract void wheels ();
+}
+
+public class car extends vehicle{
+void engine (int flag) {
+	if (flag==1) {
+		System.out.println("petrol engine");
+	}
+	else {
+		System.out.println("Diesel engine");
+	}
+}
+void model (int type) {
+	if (type==1)
+		System.out.println("HatchBack");
+	else if (type==2)
+		System.out.println("Sedan");
+	else if (type==3)
+		System.out.println("SUV");
+	else
+		System.out.println("coupe");
+}
+void wheels() {
+	System.out.println("It is a four wheeler");
+}
+
+public static void main(String[] args) {
+	car ref=new car();
+	ref.engine(1);
+	ref.model(2);
+	ref.wheels();	
+}	
+}
+
