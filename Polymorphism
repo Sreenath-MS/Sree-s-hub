@@ -1,0 +1,29 @@
+
+public interface Animal {
+void sound();
+}
+
+class Tiger implements Animal {
+	public void sound() {
+		System.out.println("ROAR");
+	}
+}
+class Dog implements Animal {
+	public void sound() {
+		System.out.println("BOW BOW");
+	}
+}
+class Cat implements Animal {
+	public void sound() {
+		System.out.println("MEOW MEOW");
+	}
+	
+	public static void main(String[] args) {
+		Animal ref = new Tiger();
+		ref.sound();
+		ref=new Cat();
+		ref.sound();
+		ref=new Dog();
+		ref.sound();
+	}
+}
