@@ -1,0 +1,18 @@
+public interface display {
+void print();
+}
+-----------------
+
+public interface sample {
+void print();
+}
+class mainclass implements sample,display{
+	public void print() {
+		System.out.println("Interface Example");
+	}
+	public static void main (String[] args) {
+		mainclass ref=new mainclass();
+		ref.print();
+	}
+	
+}
