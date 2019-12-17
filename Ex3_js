@@ -1,0 +1,6 @@
+Please find the exercise below 
+
+1.	Use the file ExampleArray.txt in the first exercise in http request to get the employee details.
+2.	Create one more button “Get Employee details” (next to submit and reset)
+3.	On click of “Get Employee details” if no employee id is entered then show error message
+4.	When user enters employee id and click on “Get Employee Details”, call the method in point 1 to show the data in the form. Use promise when implementing it.
