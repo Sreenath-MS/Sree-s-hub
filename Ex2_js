@@ -1,0 +1,19 @@
+Please find the GitHub URL  attached for your reference
+
+https://github.com/Gomathipriya/learn-ES6
+
+Please find the exercise below
+
+1.	Create a form to get Employee details like  id , firstName, lastName, salary, DOB
+2.	Use Regex to allow only numeric values for ID
+3.	Use regex to allow only alphabets for firstname and lastname
+4.	Use getName(firstName, lastName) method created in the last exercise to form employee_name
+5.	Use Regex for salary to be numeric
+6.	Don’t allow user to enter salary more than 1 Lakh 
+7.	Write a method to calculate age based on DOB
+8.	On Click of submit in the form – create the employee object to hold the following data
+{id: ‘’, employee_name : firstname+lastname without space in the beginning and end, employee_salary : ‘10000’,employee_age : ‘50’}
+9.	On click of submit show the above object in the confirmation box
+10.	Create one more button reset to reset the form data (Create this using JavaScript inside onload method)
+
+For the above exercise create Employee_Project folder and create form.html, employee.js for JavaScript and try to import this JS file inside HTML
