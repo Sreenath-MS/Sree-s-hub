@@ -1,0 +1,33 @@
+
+import java.util.ArrayList;
+import java.util.Iterator;
+public class dayThree {
+   public static void main(String[] args) {
+      ArrayList<String> aList = new ArrayList<String>();
+      aList.add("Hornet");
+      aList.add("Pulsar");
+      aList.add("Apache");
+      aList.add("Duke");
+      aList.add("KTM");
+      System.out.println("The ArrayList elements are: ");
+      for (String s: aList) {
+         System.out.println(s);
+      }
+      Iterator i = aList.iterator();
+      String str = "";
+      while (i.hasNext()) {
+         str = (String) i.next();
+         if (str.equals("Apache")) {
+            i.remove();
+            System.out.println("\nThe element Apache is removed");
+            break;
+         }
+      }
+      System.out.println("\nThe ArrayList elements are: ");
+      for (String s: aList) {
+         System.out.println(s); 
+      }
+   }
+}
+
+
