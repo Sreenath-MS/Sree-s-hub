@@ -1,0 +1,7 @@
+Please find the exercise below 
+
+1.	Convert employee array into map with key as employeeId
+2.	Add one more data into employee Object - Company Name and have default value ('ABC')
+3.	Use getName(firstName, lastName) method to have spread operator so that if we add a new field in the form like middle name. It will also be concatenated
+4.	on click of submit, filter map to check if emp Id is already there if yes show error if not then show the JSON data of the employee in a new page 
+5.	In the above task open the new page in new tab
