@@ -1,0 +1,36 @@
+package com.selenium;
+
+import java.util.ArrayList;
+
+public class arraylistExample {
+
+	public static void main(String[] args) {
+	ArrayList<Character> al=new ArrayList<Character>();
+	System.out.println(al.size());
+	System.out.println(al.isEmpty());
+	al.add('G');
+	al.add('O');
+	al.add('O');
+	al.add('G');
+	al.add('L');
+	al.add('E');
+	al.add('E');
+	System.out.println(al.contains('f'));
+	al.remove(6);
+	System.out.println(al);
+	ArrayList<Character> al1=new ArrayList<Character>();
+	al1.add('C');
+	al1.add('H');
+	al1.add('R');
+	al1.add('O');
+	al1.add('M');
+	al1.add('E');
+	//al.addAll(al1);
+	//System.out.println(al);					//rentainAll retrieves common objects
+	//al.removeAll(al1);                     // removes all the common objects
+	//System.out.println(al);				//containsAll check the objects	
+	System.out.println(al.containsAll(al1));
+
+	}
+
+}
