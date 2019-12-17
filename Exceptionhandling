@@ -1,0 +1,22 @@
+public class trycatchfinally {
+	
+	int ivalue=10;
+
+	public static void main(String[] args) {
+			System.out.println("Main-------------starts");
+			trycatchfinally ref=new trycatchfinally();
+			int first=210,second=0,res=0;
+			try {
+				System.out.println(ref.ivalue);
+				res=first/second;
+			}
+			catch(ArithmeticException e) {
+				System.out.println("Exception handled");
+			}
+			finally {
+				System.out.println("Finally block execution");
+			}
+			System.out.println("Main-------------ends");
+	}
+
+}
