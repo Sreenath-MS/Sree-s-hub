@@ -1,0 +1,80 @@
+	
+function firstNameValidate(){
+	  var regex=/^[a-zA-Z ]*$/;
+	  var isValid=false;
+	  isValid = regex.test(document.getElementById("fname").value);
+	  if(isValid===false){
+	   document.getElementById("fnameError").innerHTML="Please enter Alphabets only"
+	  }
+	  else{
+	  console.log("Valid value");
+	  }
+	 }
+ 
+ function lastNameValidate(){
+  var regex=/^[a-zA-Z ]*$/;
+  var isValid=false;
+  isValid = regex.test(document.getElementById("lname").value);
+  if(isValid===false){
+   document.getElementById("lnameError").innerHTML="Please enter Alphabets only"
+  }
+  else{
+  console.log("Valid value");
+  }
+ }
+ 
+ function idValidate(){
+	  var isValid=false;
+      var regex=/^[0-9\s]*$/;
+      isValid = regex.test(document.getElementById("id").value);
+	   if(isValid===false){
+   document.getElementById("idError").innerHTML="Please enter Numbers only"
+  }
+  else{
+  console.log("Valid value");
+  }
+ }
+ 
+function maxSal() {
+ var isValid=false;
+ var regex=/^[0-9\s]*$/;
+ isValid = regex.test(document.getElementById("sal").value);
+ if(isValid===true){
+ if((document.getElementById("sal").value)>100000)
+ {
+ document.getElementById("digitsError").innerHTML="Please enter value between 1 to 100000"
+ }
+ else{
+ console.log("Valid value");	
+ }
+ }
+ else{
+ document.getElementById("numberError").style.display = !isValid ? "block" : "none";
+ //return isValid;
+}
+}
+function getAge() {
+	var DOB=document.getElementById("dob").value;
+    var today = new Date();
+    var birthDate = new Date(DOB);
+    var age = today.getFullYear() - birthDate.getFullYear();
+    var m = today.getMonth() - birthDate.getMonth();
+    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age = age - 1;
+    }
+    window.alert("Your age is "+age);
+}
+
+function createObject(){
+var employee={};
+var x = employee;
+x.Name=document.getElementById("fname").value.concat(document.getElementById("lname").value);
+x.ID=document.getElementById("id").value
+x.Salary=document.getElementById("sal").value
+x.Age=getAge();
+window.confirm(JSON.stringify(x));
+}
+function resetForm() {
+  document.getElementById("myForm").reset();
+}
+ 
