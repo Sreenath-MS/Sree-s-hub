@@ -1,25 +1,37 @@
-<html>
-<head>
-<body>
-<input type="button" id="get" onclick="promiseToCleanTheRoom()" value="Get Details">
-<script>
-function promiseToCleanTheRoom() {
-    return new Promise((resolve,reject)=>{
-        let isClean=true;
-        if(isClean){
-            resolve('Clean');
-        }
-        else{
-            reject('Not Clean');
-        }
-        });
-        promiseToCleanTheRoom.then(function(fromResolve){
-        console.log('The room is'+fromResolve);
-        }).catch(function(fromReject){
-            console.log('The room is'+fromReject);
-        })
+function getDetails(){
+let pvalue="";
+let Employee=[{"id":"1","employee_name":"bappi gillu","employee_salary":"2147483647","employee_age":"61","profile_image":""},
+{"id":"2","employee_name":"sandeep reddy","employee_salary":"25007","employee_age":"27","profile_image":""},
+{"id":"3","employee_name":"rogue_now","employee_salary":"27888","employee_age":"26","profile_image":""},
+{"id":"4","employee_name":"CodeME-TEST","employee_salary":"123","employee_age":"23","profile_image":""},
+{"id":"5","employee_name":"hello 123456","employee_salary":"5 0000","employee_age":"26","profile_image":""},
+{"id":"6","employee_name":"Donold Cerrone","employee_salary":"22322","employee_age":"36","profile_image":""},
+{"id":"7","employee_name":" tst2 ","employee_salary":"35000","employee_age":"27","profile_image":""},
+{"id":"8","employee_name":" test111 ","employee_salary":"123","employee_age":"23","profile_image":""},
+{"id":"9","employee_name":" madhukar reddy","employee_salary":"34222","employee_age":"52","profile_image":""},
+{"id":"10","employee_name":"gd","employee_salary":" 0","employee_age":"59","profile_image":""},
+{"id":"11","employee_name":"ekesh","employee_salary":"123","employee_age":"23","profile_image":""},
+{"id":"11","employee_name":"x","employee_salary":"0","employee_age":"54","profile_image":""}]
+return new Promise((resolve,reject)=>{
+if (document.getElementById("id").value in Employee){
+resolve(document.getElementById("id").value )}
+else{
+reject('No employee Found')
 }
-</script>
-</body>
-</head>
-</html>
+});
+if (document.getElementById("id").value==''){
+ window.alert('Please Enter Valid ID')
+}
+else{
+console.log('Accept value');
+}
+ 
+console.log(pvalue);
+}
+getDetails().then((id)=>{
+pvalue=Employee.map(function(id){
+return pvalue;
+})
+}).catch((message)=>{
+window.alert(message)
+})
